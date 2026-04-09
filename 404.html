@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — MyPrivateTours.com</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .error-page {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px;
+    }
+    .error-page__code {
+      font-size: 8rem;
+      font-weight: 900;
+      line-height: 1;
+      color: #e0e0e0;
+      margin-bottom: 16px;
+    }
+    .error-page h1 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .error-page p {
+      color: #666;
+      font-size: 1.1rem;
+      max-width: 500px;
+      margin: 0 auto 32px;
+    }
+    .error-page__actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+    .error-page__search {
+      display: flex;
+      max-width: 400px;
+      margin: 0 auto 48px;
+    }
+    .error-page__search input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 2px solid #1a1a1a;
+      font-size: .95rem;
+      outline: none;
+    }
+    .error-page__search .btn { flex-shrink: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">MyPrivate<span>Tours</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li class="nav__has-mega">
+          <a href="#" class="nav__mega-trigger">City Tours</a>
+          <div class="mega-menu">
+            <div class="mega-menu__grid">
+              <div class="mega-menu__city">
+                <h4><a href="paris.html">Paris</a></h4>
+                <ul>
+                  <li><a href="paris-eiffel-tower-tours.html">Eiffel Tower Tours</a></li>
+                  <li><a href="#">Louvre Museum</a></li>
+                  <li><a href="#">Seine River Cruises</a></li>
+                  <li><a href="#">Versailles Day Trips</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu__city">
+                <h4><a href="#">Rome</a></h4>
+                <ul>
+                  <li><a href="#">Colosseum Tours</a></li>
+                  <li><a href="#">Vatican Tours</a></li>
+                  <li><a href="#">Pantheon Tours</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu__city">
+                <h4><a href="#">London</a></h4>
+                <ul>
+                  <li><a href="#">Tower of London</a></li>
+                  <li><a href="#">Buckingham Palace</a></li>
+                  <li><a href="#">Harry Potter Tours</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu__city">
+                <h4><a href="#">Barcelona</a></h4>
+                <ul>
+                  <li><a href="#">Sagrada Familia</a></li>
+                  <li><a href="#">Park Guell</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu__city">
+                <h4><a href="#">Florence</a></h4>
+                <ul>
+                  <li><a href="#">Uffizi Gallery</a></li>
+                  <li><a href="#">Duomo Tours</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu__city">
+                <h4><a href="#">Prague</a></h4>
+                <ul>
+                  <li><a href="#">Prague Castle</a></li>
+                  <li><a href="#">Old Town Tours</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu__city">
+                <h4><a href="#">Venice</a></h4>
+                <ul>
+                  <li><a href="#">Gondola Tours</a></li>
+                  <li><a href="#">St. Mark's Basilica</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu__city">
+                <h4><a href="#">New York</a></h4>
+                <ul>
+                  <li><a href="#">Statue of Liberty</a></li>
+                  <li><a href="#">Central Park Tours</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="b2b.html">B2B</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html" class="mobile-nav__link">Home</a>
+    <div class="mobile-nav__city-toggle">City Tours</div>
+    <div class="mobile-nav__accordion">
+      <a href="paris.html">Paris</a>
+      <a href="#">Rome</a>
+      <a href="#">London</a>
+      <a href="#">Barcelona</a>
+      <a href="#">Florence</a>
+      <a href="#">Prague</a>
+      <a href="#">Venice</a>
+      <a href="#">New York</a>
+    </div>
+    <a href="blog.html" class="mobile-nav__link">Blog</a>
+    <a href="about.html" class="mobile-nav__link">About</a>
+    <a href="b2b.html" class="mobile-nav__link">B2B</a>
+    <a href="contact.html" class="mobile-nav__link">Contact</a>
+  </div>
+
+  <!-- ===== 404 CONTENT ===== -->
+  <div class="error-page">
+    <div>
+      <div class="error-page__code">404</div>
+      <h1>Page Not Found</h1>
+      <p>Looks like this page has wandered off the tour route. Let's get you back on track.</p>
+
+      <div class="error-page__search">
+        <input type="text" placeholder="Search tours, cities, or guides...">
+        <button class="btn">Search</button>
+      </div>
+
+      <div class="error-page__actions">
+        <a href="index.html" class="btn">Back to Homepage</a>
+        <a href="paris.html" class="btn btn--outline">Browse Paris Tours</a>
+        <a href="contact.html" class="btn btn--outline">Contact Support</a>
+      </div>
+
+      <!-- Featured Tours Suggestion -->
+      <div style="max-width:900px;margin:0 auto">
+        <h2 style="margin-bottom:24px">Popular Tours You Might Like</h2>
+        <div class="cards-grid cards-grid--3">
+
+          <article class="tour-card" data-href="tour-detail.html">
+            <div class="tour-card__img">
+              <div class="img-placeholder img-placeholder--16x9">Eiffel Tower — Paris</div>
+              <span class="tour-card__tag">Paris</span>
+            </div>
+            <div class="tour-card__body">
+              <h3 class="tour-card__title">Private Eiffel Tower Tour with Summit Access</h3>
+              <div class="tour-card__meta">
+                <span>3 hours</span>
+                <span>&#9733;&#9733;&#9733;&#9733;&#9733; (247)</span>
+              </div>
+              <div class="tour-card__footer">
+                <span class="tour-card__price">$189 <small>per person</small></span>
+                <a href="tour-detail.html" class="btn btn--book">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="tour-card" data-href="tour-detail.html">
+            <div class="tour-card__img">
+              <div class="img-placeholder img-placeholder--16x9">Colosseum — Rome</div>
+              <span class="tour-card__tag">Rome</span>
+            </div>
+            <div class="tour-card__body">
+              <h3 class="tour-card__title">Skip-the-Line Colosseum & Roman Forum Private Tour</h3>
+              <div class="tour-card__meta">
+                <span>3.5 hours</span>
+                <span>&#9733;&#9733;&#9733;&#9733;&#9733; (312)</span>
+              </div>
+              <div class="tour-card__footer">
+                <span class="tour-card__price">$159 <small>per person</small></span>
+                <a href="tour-detail.html" class="btn btn--book">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="tour-card" data-href="tour-detail.html">
+            <div class="tour-card__img">
+              <div class="img-placeholder img-placeholder--16x9">Gondola — Venice</div>
+              <span class="tour-card__tag">Venice</span>
+            </div>
+            <div class="tour-card__body">
+              <h3 class="tour-card__title">Private Gondola Ride & Grand Canal Tour</h3>
+              <div class="tour-card__meta">
+                <span>2 hours</span>
+                <span>&#9733;&#9733;&#9733;&#9733;&#9733; (221)</span>
+              </div>
+              <div class="tour-card__footer">
+                <span class="tour-card__price">$199 <small>per person</small></span>
+                <a href="tour-detail.html" class="btn btn--book">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__brand">
+          <a href="index.html" class="nav__logo" style="color:#fff;font-size:1.25rem">MyPrivate<span>Tours</span></a>
+          <p>Premium private tours across Europe's most iconic cities and New York. Expert local guides, curated experiences, and unforgettable moments.</p>
+          <div class="footer__newsletter">
+            <input type="email" placeholder="Your email">
+            <button class="btn btn--sm btn--white">Subscribe</button>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Cities</h4>
+          <ul>
+            <li><a href="paris.html">Paris</a></li>
+            <li><a href="#">Rome</a></li>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Barcelona</a></li>
+            <li><a href="#">Florence</a></li>
+            <li><a href="#">Prague</a></li>
+            <li><a href="#">Venice</a></li>
+            <li><a href="#">New York</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="b2b.html">B2B Portal</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 MyPrivateTours.com. All rights reserved.</span>
+        <div class="footer__social">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">TripAdvisor</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Widget -->
+  <div class="whatsapp-widget">
+    <span class="whatsapp-widget__icon">WA</span>
+    <span class="whatsapp-widget__tooltip">Chat with us on WhatsApp</span>
+  </div>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner">
+    <div class="container cookie-banner__inner">
+      <p>We use cookies to improve your experience. By continuing, you agree to our <a href="privacy.html" style="color:#fff;text-decoration:underline">cookie policy</a>.</p>
+      <div class="cookie-banner__actions">
+        <button class="btn btn--sm btn--white" data-cookie-action="accept">Accept All</button>
+        <button class="btn btn--sm btn--outline" style="border-color:#fff;color:#fff" data-cookie-action="manage">Manage Preferences</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

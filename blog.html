@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Guides & Blog — MyPrivateTours.com</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =====================================================================
+       1. NAVIGATION
+  ====================================================================== -->
+  <nav class="nav">
+    <div class="container nav__inner">
+
+      <a href="index.html" class="nav__logo">MyPrivateTours</a>
+
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+
+        <!-- City Tours with Mega Menu -->
+        <li class="nav__has-mega">
+          <button class="nav__mega-trigger" aria-expanded="false" aria-haspopup="true">
+            City Tours <span class="nav__caret">▾</span>
+          </button>
+
+          <div class="mega-menu" role="region" aria-label="City Tours Menu">
+            <div class="container">
+              <div class="mega-menu__grid">
+
+                <div class="mega-menu__city">
+                  <strong><a href="paris.html">Paris</a></strong>
+                  <ul>
+                    <li><a href="paris.html#eiffel">Eiffel Tower Tours</a></li>
+                    <li><a href="paris.html#louvre">Louvre Museum</a></li>
+                    <li><a href="paris.html#seine">Seine River Cruises</a></li>
+                    <li><a href="paris.html#versailles">Versailles Day Trips</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-menu__city">
+                  <strong><a href="#">Rome</a></strong>
+                  <ul>
+                    <li><a href="#">Colosseum Tours</a></li>
+                    <li><a href="#">Vatican Tours</a></li>
+                    <li><a href="#">Pantheon Tours</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-menu__city">
+                  <strong><a href="#">London</a></strong>
+                  <ul>
+                    <li><a href="#">Tower of London</a></li>
+                    <li><a href="#">Buckingham Palace</a></li>
+                    <li><a href="#">Harry Potter Tours</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-menu__city">
+                  <strong><a href="#">Barcelona</a></strong>
+                  <ul>
+                    <li><a href="#">Sagrada Familia</a></li>
+                    <li><a href="#">Park Guell</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-menu__city">
+                  <strong><a href="#">Florence</a></strong>
+                  <ul>
+                    <li><a href="#">Uffizi Gallery</a></li>
+                    <li><a href="#">Duomo Tours</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-menu__city">
+                  <strong><a href="#">Prague</a></strong>
+                  <ul>
+                    <li><a href="#">Prague Castle</a></li>
+                    <li><a href="#">Old Town Tours</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-menu__city">
+                  <strong><a href="#">Venice</a></strong>
+                  <ul>
+                    <li><a href="#">Gondola Tours</a></li>
+                    <li><a href="#">St. Mark's Basilica</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-menu__city">
+                  <strong><a href="#">New York</a></strong>
+                  <ul>
+                    <li><a href="#">Statue of Liberty</a></li>
+                    <li><a href="#">Central Park Tours</a></li>
+                  </ul>
+                </div>
+
+              </div><!-- /mega-menu__grid -->
+            </div>
+          </div><!-- /mega-menu -->
+        </li>
+
+        <li><a href="blog.html" class="nav__active">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="b2b.html">B2B</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div><!-- /nav__inner -->
+  </nav>
+
+  <!-- MOBILE NAV OVERLAY -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav__header">
+      <span class="nav__logo">MyPrivateTours</span>
+      <button class="mobile-nav__close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li class="mobile-nav__accordion">
+        <button class="mobile-nav__accordion-trigger" aria-expanded="false">
+          City Tours <span>▾</span>
+        </button>
+        <ul class="mobile-nav__accordion-body">
+          <li><strong>Paris</strong></li>
+          <li><a href="paris.html#eiffel">Eiffel Tower Tours</a></li>
+          <li><a href="paris.html#louvre">Louvre Museum</a></li>
+          <li><a href="paris.html#seine">Seine River Cruises</a></li>
+          <li><a href="paris.html#versailles">Versailles Day Trips</a></li>
+          <li><strong>Rome</strong></li>
+          <li><a href="#">Colosseum Tours</a></li>
+          <li><a href="#">Vatican Tours</a></li>
+          <li><a href="#">Pantheon Tours</a></li>
+          <li><strong>London</strong></li>
+          <li><a href="#">Tower of London</a></li>
+          <li><a href="#">Buckingham Palace</a></li>
+          <li><a href="#">Harry Potter Tours</a></li>
+          <li><strong>Barcelona</strong></li>
+          <li><a href="#">Sagrada Familia</a></li>
+          <li><a href="#">Park Guell</a></li>
+          <li><strong>Florence</strong></li>
+          <li><a href="#">Uffizi Gallery</a></li>
+          <li><a href="#">Duomo Tours</a></li>
+          <li><strong>Prague</strong></li>
+          <li><a href="#">Prague Castle</a></li>
+          <li><a href="#">Old Town Tours</a></li>
+          <li><strong>Venice</strong></li>
+          <li><a href="#">Gondola Tours</a></li>
+          <li><a href="#">St. Mark's Basilica</a></li>
+          <li><strong>New York</strong></li>
+          <li><a href="#">Statue of Liberty</a></li>
+          <li><a href="#">Central Park Tours</a></li>
+        </ul>
+      </li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="b2b.html">B2B</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="mobile-nav__backdrop" aria-hidden="true"></div>
+
+
+  <!-- =====================================================================
+       2. HERO (compact)
+  ====================================================================== -->
+  <section class="hero hero--compact">
+    <div class="hero__content container">
+      <h1>Travel Guides &amp; Blog</h1>
+      <p class="hero__sub">Expert tips, insider guides, and travel inspiration from our local guides across 8 cities</p>
+    </div>
+  </section>
+
+
+  <!-- =====================================================================
+       3. FILTER TAGS
+  ====================================================================== -->
+  <section class="attraction-strip-wrap">
+    <div class="container">
+      <div class="attraction-strip" role="group" aria-label="Filter articles by city">
+        <button class="attraction-strip__btn attraction-strip__btn--active">All</button>
+        <button class="attraction-strip__btn">Paris</button>
+        <button class="attraction-strip__btn">Rome</button>
+        <button class="attraction-strip__btn">London</button>
+        <button class="attraction-strip__btn">Barcelona</button>
+        <button class="attraction-strip__btn">Florence</button>
+        <button class="attraction-strip__btn">Prague</button>
+        <button class="attraction-strip__btn">Venice</button>
+        <button class="attraction-strip__btn">New York</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================================
+       4. FEATURED POST
+  ====================================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+
+      <article class="feature-card">
+        <div class="feature-card__img img-placeholder">Featured Post — European Private Tours</div>
+        <div class="feature-card__body">
+          <span class="blog-card__tag">Featured</span>
+          <h2 class="feature-card__title">
+            <a href="blog-article.html">The Complete Guide to Private Tours in Europe: What to Expect in 2026</a>
+          </h2>
+          <p class="feature-card__excerpt">Planning a European trip? Here's everything you need to know about booking private tours — from choosing the right guide to getting skip-the-line access at the continent's most popular attractions.</p>
+          <div class="feature-card__meta">12 min read &middot; April 2026</div>
+          <a href="blog-article.html" class="btn btn--primary btn--sm">Read Article</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- =====================================================================
+       5. ARTICLE GRID (3 columns, 9 cards)
+  ====================================================================== -->
+  <section class="section section--gray">
+    <div class="container">
+
+      <div class="cards-grid--3">
+
+        <!-- Card 1 -->
+        <article class="blog-card">
+          <div class="img-placeholder blog-card__img">Blog Image — Paris Hidden Streets</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Paris</span>
+            <h3 class="blog-card__title">
+              <a href="blog-article.html">10 Hidden Gems in Paris Only Locals Know</a>
+            </h3>
+            <div class="blog-card__meta">6 min read</div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="blog-card">
+          <div class="img-placeholder blog-card__img">Blog Image — Colosseum Rome</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Rome</span>
+            <h3 class="blog-card__title">
+              <a href="blog-article.html">The Ultimate Guide to Visiting the Colosseum in 2026</a>
+            </h3>
+            <div class="blog-card__meta">8 min read</div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="blog-card">
+          <div class="img-placeholder blog-card__img">Blog Image — London Family</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">London</span>
+            <h3 class="blog-card__title">
+              <a href="blog-article.html">London with Kids: A Family Travel Guide</a>
+            </h3>
+            <div class="blog-card__meta">5 min read</div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="blog-card">
+          <div class="img-placeholder blog-card__img">Blog Image — Barcelona</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Barcelona</span>
+            <h3 class="blog-card__title">
+              <a href="blog-article.html">Barcelona Beyond Gaudi: A Local's Perspective</a>
+            </h3>
+            <div class="blog-card__meta">7 min read</div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="blog-card">
+          <div class="img-placeholder blog-card__img">Blog Image — Florence Art</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Florence</span>
+            <h3 class="blog-card__title">
+              <a href="blog-article.html">Florence Art Tours: Why an Expert Guide Changes Everything</a>
+            </h3>
+            <div class="blog-card__meta">6 min read</div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="blog-card">
+          <div class="img-placeholder blog-card__img">Blog Image — Prague Winter</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Prague</span>
+            <h3 class="blog-card__title">
+              <a href="blog-article.html">Prague in Winter: The Magic of Off-Season Travel</a>
+            </h3>
+            <div class="blog-card__meta">5 min read</div>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="blog-card">
+          <div class="img-placeholder blog-card__img">Blog Image — Venice Canal</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Venice</span>
+            <h3 class="blog-card__title">
+              <a href="blog-article.html">Venice Without the Crowds: A Private Tour Strategy</a>
+            </h3>
+            <div class="blog-card__meta">6 min read</div>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="blog-card">
+          <div class="img-placeholder blog-card__img">Blog Image — New York Central Park</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">New York</span>
+            <h3 class="blog-card__title">
+              <a href="blog-article.html">New York's Best-Kept Secrets: From Central Park to Brooklyn</a>
+            </h3>
+            <div class="blog-card__meta">8 min read</div>
+          </div>
+        </article>
+
+        <!-- Card 9 -->
+        <article class="blog-card">
+          <div class="img-placeholder blog-card__img">Blog Image — Private Guide</div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">General</span>
+            <h3 class="blog-card__title">
+              <a href="blog-article.html">How to Choose the Right Private Tour Guide</a>
+            </h3>
+            <div class="blog-card__meta">4 min read</div>
+          </div>
+        </article>
+
+      </div><!-- /cards-grid--3 -->
+
+    </div>
+  </section>
+
+
+  <!-- =====================================================================
+       6. PAGINATION
+  ====================================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <nav class="pagination" aria-label="Blog pagination">
+        <a href="#" class="pagination__btn pagination__btn--active" aria-current="page">1</a>
+        <a href="#" class="pagination__btn">2</a>
+        <a href="#" class="pagination__btn">3</a>
+        <a href="#" class="pagination__btn pagination__btn--next" aria-label="Next page">&rarr;</a>
+      </nav>
+    </div>
+  </section>
+
+
+  <!-- =====================================================================
+       7. FOOTER
+  ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__brand">
+          <a href="index.html" class="nav__logo" style="color:#fff">MyPrivate<span>Tours</span></a>
+          <p>Premium private tours across Europe's most iconic cities and New York. Expert local guides, curated experiences, and unforgettable moments.</p>
+          <div class="footer__newsletter"><input type="email" placeholder="Your email"><button class="btn btn--sm btn--white">Subscribe</button></div>
+        </div>
+        <div class="footer__col"><h4>Cities</h4><ul><li><a href="paris.html">Paris</a></li><li><a href="#">Rome</a></li><li><a href="#">London</a></li><li><a href="#">Barcelona</a></li><li><a href="#">Florence</a></li><li><a href="#">Prague</a></li><li><a href="#">Venice</a></li><li><a href="#">New York</a></li></ul></div>
+        <div class="footer__col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="b2b.html">B2B Portal</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+        <div class="footer__col"><h4>Legal</h4><ul><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 MyPrivateTours.com. All rights reserved.</span>
+        <div class="footer__social"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TripAdvisor</a></div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- =====================================================================
+       WHATSAPP WIDGET (fixed bottom-right)
+  ====================================================================== -->
+  <div class="whatsapp-widget" aria-label="Chat with us on WhatsApp" role="complementary">
+    <button class="whatsapp-widget__icon" aria-label="Open WhatsApp chat">WA</button>
+    <span class="whatsapp-widget__tooltip">Chat with us on WhatsApp</span>
+  </div>
+
+
+  <!-- =====================================================================
+       COOKIE BANNER
+  ====================================================================== -->
+  <div class="cookie-banner" id="cookie-banner" aria-live="polite" aria-hidden="true" hidden>
+    <div class="cookie-banner__inner container">
+      <p>We use cookies to improve your experience. By continuing, you agree to our <a href="cookie-policy.html">cookie policy</a>.</p>
+      <div class="cookie-banner__actions">
+        <button class="btn btn--sm" id="cookie-accept">Accept All</button>
+        <button class="btn btn--outline btn--sm" id="cookie-manage">Manage Preferences</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="scripts.js"></script>
+</body>
+</html>
