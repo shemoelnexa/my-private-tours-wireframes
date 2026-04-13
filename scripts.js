@@ -4,15 +4,52 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // --- Mega Menu (original BEM class pattern) ---
-  const megaTriggers = document.querySelectorAll('.nav__mega-trigger');
-  megaTriggers.forEach(trigger => {
-    const parent = trigger.closest('.nav__has-mega');
-    const menu = parent?.querySelector('.mega-menu');
+  // --- Mega Menu (hover dropdowns with close delay) ---
+  const megaItems = document.querySelectorAll('.nav__has-mega');
+  let closeTimer = null;
+
+  megaItems.forEach(item => {
+    const menu = item.querySelector('.mega-menu');
     if (!menu) return;
 
-    parent.addEventListener('mouseenter', () => menu.classList.add('active'));
-    parent.addEventListener('mouseleave', () => menu.classList.remove('active'));
+    item.addEventListener('mouseenter', () => {
+      clearTimeout(closeTimer);
+      // Close any other open megas first
+      megaItems.forEach(other => {
+        if (other !== item) other.querySelector('.mega-menu')?.classList.remove('active');
+      });
+      menu.classList.add('active');
+    });
+
+    item.addEventListener('mouseleave', () => {
+      closeTimer = setTimeout(() => menu.classList.remove('active'), 150);
+    });
+
+    // Keep menu open when hovering over the dropdown itself
+    menu.addEventListener('mouseenter', () => {
+      clearTimeout(closeTimer);
+    });
+
+    menu.addEventListener('mouseleave', () => {
+      closeTimer = setTimeout(() => menu.classList.remove('active'), 150);
+    });
+  });
+
+  // Close mega menu when mouse leaves the nav entirely
+  const navEl = document.querySelector('.nav');
+  if (navEl) {
+    navEl.addEventListener('mouseleave', () => {
+      clearTimeout(closeTimer);
+      document.querySelectorAll('.mega-menu.active').forEach(m => m.classList.remove('active'));
+    });
+  }
+
+  // Region sidebar hover — highlight active region
+  document.querySelectorAll('.mega-menu__regions a').forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      link.closest('.mega-menu__regions').querySelectorAll('a').forEach(a => a.classList.remove('active'));
+      link.classList.add('active');
+    });
   });
 
   // --- Mobile Hamburger (original BEM class pattern) ---
