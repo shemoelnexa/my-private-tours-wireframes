@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eiffel Tower Tours in Paris — MyPrivateTours.com</title>
+  <meta name="description" content="Skip the lines with a private guide and experience the Eiffel Tower like never before. Book private Eiffel Tower tours with summit access, sunset champagne experiences, and Seine River combos." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =====================================================================
+       1. NAVIGATION — Two-row header with mega dropdown
+  ====================================================================== -->
+  <nav class="nav">
+    <div class="nav__top">
+      <div class="container nav__top-inner">
+        <a href="index.html" class="nav__logo">MyPrivate<span>Tours</span></a>
+        <ul class="nav__categories">
+          <li><a href="index.html" class="nav__cat-trigger">Home</a></li>
+          <li class="nav__has-mega">
+            <button class="nav__cat-trigger" aria-expanded="false" aria-haspopup="true">City Tours <span class="nav__caret">&#9662;</span></button>
+            <div class="mega-menu" role="region" aria-label="City Tours">
+              <div class="mega-menu__layout">
+                <aside class="mega-menu__sidebar"><ul class="mega-menu__regions"><li><a href="paris.html" class="active">Paris</a></li><li><a href="#">Rome</a></li><li><a href="#">London</a></li><li><a href="#">Barcelona</a></li><li><a href="#">Florence</a></li><li><a href="#">Prague</a></li><li><a href="#">Venice</a></li><li><a href="#">New York</a></li></ul></aside>
+                <div class="mega-menu__main">
+                  <h4 class="mega-menu__heading"><span class="mega-menu__dot"></span> Top attractions</h4>
+                  <div class="mega-menu__attractions">
+                    <a href="paris-eiffel-tower-tours.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Eiffel Tower</div><div class="mega-attr__text"><strong>Eiffel Tower Tours</strong><span>Attraction in Paris, France</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Colosseum</div><div class="mega-attr__text"><strong>Colosseum Tours</strong><span>Attraction in Rome, Italy</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Sagrada Familia</div><div class="mega-attr__text"><strong>Sagrada Familia Tours</strong><span>Attraction in Barcelona, Spain</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Vatican</div><div class="mega-attr__text"><strong>Vatican Museums Tours</strong><span>Attraction in Rome, Italy</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Disneyland</div><div class="mega-attr__text"><strong>Disneyland Paris Tours</strong><span>Attraction in Paris, France</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Auschwitz</div><div class="mega-attr__text"><strong>Memorial &amp; Museum Tours</strong><span>Attraction in Oswiecim, Poland</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Warner Bros</div><div class="mega-attr__text"><strong>Warner Bros. Studio Tours</strong><span>Attraction in London, UK</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Louvre</div><div class="mega-attr__text"><strong>Louvre Museum Tours</strong><span>Attraction in Paris, France</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Seine</div><div class="mega-attr__text"><strong>Seine River Tours</strong><span>Attraction in Paris, France</span></div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Blog with Mega Menu -->
+          <li class="nav__has-mega">
+            <button class="nav__cat-trigger" aria-expanded="false" aria-haspopup="true">
+              Blog <span class="nav__caret">&#9662;</span>
+            </button>
+            <div class="mega-menu" role="region" aria-label="Blog">
+              <div class="mega-menu__layout">
+                <aside class="mega-menu__sidebar">
+                  <ul class="mega-menu__regions">
+                    <li><a href="blog.html" class="active">All Articles</a></li>
+                    <li><a href="#">Travel Tips</a></li>
+                    <li><a href="#">Destination Guides</a></li>
+                    <li><a href="#">Food &amp; Culture</a></li>
+                    <li><a href="#">Family Travel</a></li>
+                    <li><a href="#">Hidden Gems</a></li>
+                  </ul>
+                </aside>
+                <div class="mega-menu__main">
+                  <h4 class="mega-menu__heading"><span class="mega-menu__dot"></span> Latest articles</h4>
+                  <div class="mega-menu__attractions">
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Paris</div><div class="mega-attr__text"><strong>10 Hidden Gems in Paris Only Locals Know</strong><span>Travel Tips &middot; 6 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Rome</div><div class="mega-attr__text"><strong>Ultimate Guide to the Colosseum in 2026</strong><span>Destination Guide &middot; 8 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">London</div><div class="mega-attr__text"><strong>London with Kids: A Family Travel Guide</strong><span>Family Travel &middot; 5 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Barcelona</div><div class="mega-attr__text"><strong>Barcelona Beyond Gaudi: Local Favourites</strong><span>Hidden Gems &middot; 7 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Food</div><div class="mega-attr__text"><strong>Best Food Tours in Europe: A Tasting Guide</strong><span>Food &amp; Culture &middot; 6 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Venice</div><div class="mega-attr__text"><strong>Venice Off the Beaten Path</strong><span>Hidden Gems &middot; 5 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Prague</div><div class="mega-attr__text"><strong>Prague in Winter: A Magical Experience</strong><span>Destination Guide &middot; 6 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Florence</div><div class="mega-attr__text"><strong>Florence Art &amp; Wine: The Perfect Combo</strong><span>Food &amp; Culture &middot; 7 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">New York</div><div class="mega-attr__text"><strong>First-Timer's Guide to New York City</strong><span>Travel Tips &middot; 9 min read</span></div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="about.html" class="nav__cat-trigger">About</a></li>
+
+          <!-- B2B with Mega Menu -->
+          <li class="nav__has-mega">
+            <button class="nav__cat-trigger" aria-expanded="false" aria-haspopup="true">
+              B2B <span class="nav__caret">&#9662;</span>
+            </button>
+            <div class="mega-menu" role="region" aria-label="B2B">
+              <div class="mega-menu__layout">
+                <aside class="mega-menu__sidebar">
+                  <ul class="mega-menu__regions">
+                    <li><a href="b2b.html" class="active">Overview</a></li>
+                    <li><a href="#">Travel Agencies</a></li>
+                    <li><a href="#">Hotels &amp; Concierge</a></li>
+                    <li><a href="#">Corporate Groups</a></li>
+                    <li><a href="#">DMCs &amp; Operators</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                  </ul>
+                </aside>
+                <div class="mega-menu__main">
+                  <h4 class="mega-menu__heading"><span class="mega-menu__dot"></span> Partner solutions</h4>
+                  <div class="mega-menu__attractions">
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">White Label</div><div class="mega-attr__text"><strong>White-Label Solutions</strong><span>Branded booking for your clients</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">API</div><div class="mega-attr__text"><strong>API Integration</strong><span>Connect your platform to our tours</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Commission</div><div class="mega-attr__text"><strong>Commission Program</strong><span>Earn on every referral booking</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Group</div><div class="mega-attr__text"><strong>Group Bookings</strong><span>Custom itineraries for 10+ guests</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Concierge</div><div class="mega-attr__text"><strong>Concierge Desk Program</strong><span>Exclusive rates for hotel partners</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Corporate</div><div class="mega-attr__text"><strong>Corporate Experiences</strong><span>Team building &amp; incentive trips</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">MICE</div><div class="mega-attr__text"><strong>MICE &amp; Events</strong><span>Meetings, incentives &amp; conferences</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">DMC</div><div class="mega-attr__text"><strong>DMC Partnerships</strong><span>Destination management collaboration</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Affiliate</div><div class="mega-attr__text"><strong>Affiliate Program</strong><span>Earn commissions from your audience</span></div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="contact.html" class="nav__cat-trigger">Contact</a></li>
+        </ul>
+        <div class="nav__utility">
+          <a href="#" class="nav__utility-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Wishlist</a>
+          <a href="#" class="nav__utility-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> EN/USD</a>
+          <a href="#" class="nav__utility-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Profile</a>
+        </div>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+</nav>
+
+  <!-- MOBILE NAV OVERLAY -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav__header">
+      <span class="nav__logo">MyPrivate<span>Tours</span></span>
+      <button class="mobile-nav__close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li class="mobile-nav__accordion">
+        <button class="mobile-nav__accordion-trigger" aria-expanded="false">Places to see <span>&#9662;</span></button>
+        <ul class="mobile-nav__accordion-body">
+          <li><a href="paris.html">Paris</a></li>
+          <li><a href="#">Rome</a></li>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Barcelona</a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav__accordion">
+        <button class="mobile-nav__accordion-trigger" aria-expanded="false">Things to do <span>&#9662;</span></button>
+        <ul class="mobile-nav__accordion-body">
+          <li><a href="#">Walking Tours</a></li>
+          <li><a href="#">Food Tours</a></li>
+          <li><a href="#">Museum Tours</a></li>
+        </ul>
+      </li>
+      <li><a href="blog.html">Trip inspiration</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="mobile-nav__backdrop" aria-hidden="true"></div>
+
+
+  <!-- ============================================================
+       BREADCRUMB
+  ============================================================ -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb__sep">&rsaquo;</span>
+      <a href="paris.html">Paris</a>
+      <span class="breadcrumb__sep">&rsaquo;</span>
+      <span class="breadcrumb__current">Eiffel Tower Tours</span>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       COMPACT HERO
+  ============================================================ -->
+  <section class="hero hero--compact">
+    <div class="hero__bg">
+      <div class="img-placeholder" style="width:100%;height:100%;">Eiffel Tower — Paris</div>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1>Eiffel Tower Tours in Paris</h1>
+      <p>Skip the lines with a private guide and experience the Eiffel Tower like never before</p>
+    </div>
+  </section><!-- /.hero -->
+
+
+  <!-- ============================================================
+       FILTER BAR
+  ============================================================ -->
+  <div class="filter-bar">
+    <div class="container">
+      <div class="filter-bar__inner">
+
+        <div class="filter-bar__group">
+          <label class="filter-bar__label" for="filter-start-time">Start Time</label>
+          <select class="filter-bar__select" id="filter-start-time">
+            <option value="">Any Time</option>
+            <option value="morning">Morning (06:00–12:00)</option>
+            <option value="afternoon">Afternoon (12:00–17:00)</option>
+            <option value="evening">Evening (17:00+)</option>
+          </select>
+        </div>
+
+        <div class="filter-bar__group">
+          <label class="filter-bar__label" for="filter-price">Price Range</label>
+          <select class="filter-bar__select" id="filter-price">
+            <option value="">Any Price</option>
+            <option value="0-100">Under $100</option>
+            <option value="100-200">$100 – $200</option>
+            <option value="200-300">$200 – $300</option>
+            <option value="300+">$300+</option>
+          </select>
+        </div>
+
+        <div class="filter-bar__group">
+          <label class="filter-bar__label" for="filter-duration">Duration</label>
+          <select class="filter-bar__select" id="filter-duration">
+            <option value="">Any Duration</option>
+            <option value="1-2">1–2 Hours</option>
+            <option value="2-4">2–4 Hours</option>
+            <option value="4-6">4–6 Hours</option>
+            <option value="6+">Full Day (6h+)</option>
+          </select>
+        </div>
+
+        <div class="filter-bar__group">
+          <label class="filter-bar__label" for="filter-rating">Star Rating</label>
+          <select class="filter-bar__select" id="filter-rating">
+            <option value="">Any Rating</option>
+            <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; 5 Stars</option>
+            <option value="4">&#9733;&#9733;&#9733;&#9733; 4+ Stars</option>
+            <option value="3">&#9733;&#9733;&#9733; 3+ Stars</option>
+          </select>
+        </div>
+
+        <div class="filter-bar__group">
+          <label class="filter-bar__label" for="filter-group">Group Size</label>
+          <select class="filter-bar__select" id="filter-group">
+            <option value="">Any Size</option>
+            <option value="solo">Solo</option>
+            <option value="couple">Couple (2)</option>
+            <option value="small">Small (3–6)</option>
+            <option value="large">Large (7+)</option>
+          </select>
+        </div>
+
+        <button class="btn btn--sm filter-bar__btn">Apply Filters</button>
+
+      </div><!-- /.filter-bar__inner -->
+    </div><!-- /.container -->
+  </div><!-- /.filter-bar -->
+
+
+  <!-- ============================================================
+       TOUR LISTINGS — VARIANT A: Grid Layout (4+ Tours)
+  ============================================================ -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section__header" style="margin-bottom:32px;">
+        <p class="section__label" style="font-size:.8rem;text-transform:uppercase;letter-spacing:1px;color:#888;margin-bottom:6px;">Adaptive Layout Demo</p>
+        <h2>Grid Layout (4+ Tours)</h2>
+        <p style="color:#555;max-width:560px;">When four or more tours are available, listings display in a three-column card grid for easy scanning and comparison.</p>
+      </div>
+
+      <div class="cards-grid--3">
+
+        <!-- Tour Card 1 -->
+        <article class="tour-card" data-href="tour-detail.html">
+          <div class="tour-card__img">
+            <div class="img-placeholder img-placeholder--16x9">Private Eiffel Tower Tour</div>
+          </div>
+          <div class="tour-card__body">
+            <h3 class="tour-card__title">Private Eiffel Tower Tour with Summit Access</h3>
+            <div class="tour-card__meta">
+              <span class="tour-card__duration">&#9200; 3 hrs</span>
+              <span class="tour-card__type">Private group</span>
+            </div>
+            <div class="tour-card__rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(247)</span>
+            </div>
+            <div class="tour-card__footer">
+              <span class="tour-card__price">From <strong>$189</strong> <span class="tour-card__per">/ person</span></span>
+              <button class="btn btn--book">Book Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tour Card 2 -->
+        <article class="tour-card" data-href="tour-detail.html">
+          <div class="tour-card__img">
+            <div class="img-placeholder img-placeholder--16x9">Eiffel Tower Sunset Tour</div>
+          </div>
+          <div class="tour-card__body">
+            <h3 class="tour-card__title">Eiffel Tower Sunset Tour with Champagne</h3>
+            <div class="tour-card__meta">
+              <span class="tour-card__duration">&#9200; 2 hrs</span>
+              <span class="tour-card__type">Private group</span>
+            </div>
+            <div class="tour-card__rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(189)</span>
+            </div>
+            <div class="tour-card__footer">
+              <span class="tour-card__price">From <strong>$225</strong> <span class="tour-card__per">/ person</span></span>
+              <button class="btn btn--book">Book Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tour Card 3 -->
+        <article class="tour-card" data-href="tour-detail.html">
+          <div class="tour-card__img">
+            <div class="img-placeholder img-placeholder--16x9">Eiffel Tower &amp; Seine Combo</div>
+          </div>
+          <div class="tour-card__body">
+            <h3 class="tour-card__title">Eiffel Tower &amp; Seine River Combo Private Tour</h3>
+            <div class="tour-card__meta">
+              <span class="tour-card__duration">&#9200; 4 hrs</span>
+              <span class="tour-card__type">Private group</span>
+            </div>
+            <div class="tour-card__rating">
+              <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="rating-count">(156)</span>
+            </div>
+            <div class="tour-card__footer">
+              <span class="tour-card__price">From <strong>$269</strong> <span class="tour-card__per">/ person</span></span>
+              <button class="btn btn--book">Book Now</button>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /.cards-grid--3 -->
+    </div><!-- /.container -->
+  </section>
+
+
+  <!-- ============================================================
+       TOUR LISTINGS — VARIANT B: Feature Card Layout (1-2 Tours)
+  ============================================================ -->
+  <section class="section section--gray">
+    <div class="container">
+
+      <div class="section__header" style="margin-bottom:32px;">
+        <p class="section__label" style="font-size:.8rem;text-transform:uppercase;letter-spacing:1px;color:#888;margin-bottom:6px;">Adaptive Layout Demo</p>
+        <h2>Feature Layout (1–2 Tours)</h2>
+        <p style="color:#555;max-width:560px;">When only one or two tours are available, a full-width feature card showcases the tour with more detail and visual prominence.</p>
+      </div>
+
+      <!-- Feature Card -->
+      <article class="feature-card">
+
+        <div class="feature-card__img">
+          <div class="img-placeholder">Private Eiffel Tower Tour — Summit Access</div>
+        </div>
+
+        <div class="feature-card__body">
+
+          <div class="feature-card__badges">
+            <span class="badge">Skip-the-line</span>
+            <span class="badge">Private Group</span>
+            <span class="badge">Summit Access</span>
+          </div>
+
+          <h3 class="feature-card__title">Private Eiffel Tower Tour with Summit Access</h3>
+
+          <div class="feature-card__meta">
+            <span>&#9200; 3 hours</span>
+            <span>&middot;</span>
+            <span>Private group</span>
+            <span>&middot;</span>
+            <span>Skip-the-line</span>
+          </div>
+
+          <p class="feature-card__desc">
+            Ascend the iconic Eiffel Tower with your personal guide, bypassing the queues with priority access. Your tour includes fascinating commentary on Gustave Eiffel's engineering marvel, panoramic views from the second floor, and exclusive summit access. Perfect for families, couples, and small groups.
+          </p>
+
+          <div class="feature-card__rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="rating-count">(247 reviews)</span>
+          </div>
+
+          <div class="feature-card__footer">
+            <div class="feature-card__price">
+              From <strong>$189</strong> <span>per person</span>
+            </div>
+            <a href="tour-detail.html" class="btn">Book Now</a>
+          </div>
+
+        </div><!-- /.feature-card__body -->
+
+      </article><!-- /.feature-card -->
+
+    </div><!-- /.container -->
+  </section>
+
+
+  <!-- ============================================================
+       ATTRACTION DESCRIPTION
+  ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="attraction-desc" style="max-width:820px;">
+        <h2>About Eiffel Tower Tours</h2>
+        <p>
+          The Eiffel Tower stands as Paris's most recognised landmark and the world's most-visited paid monument. Built in 1889 for the World's Fair, Gustave Eiffel's iron masterpiece rises 330 metres above the Champ de Mars, offering sweeping panoramic views of the entire city.
+        </p>
+        <p>
+          A private Eiffel Tower tour transforms a standard visit into something extraordinary. Skip the notoriously long queues — often exceeding two hours in peak season — and gain priority access with your expert guide. Learn the fascinating stories behind its construction, the controversies it sparked, and the engineering innovations that keep it standing.
+        </p>
+        <p>
+          Our guides share insider knowledge about the best viewing angles, the hidden apartment at the summit, and the sparkling light show that illuminates Paris every evening. Whether you choose a morning tour for the clearest views or a sunset tour for golden-hour photography, your private Eiffel Tower experience will be one of the highlights of your Paris visit.
+        </p>
+      </div>
+    </div><!-- /.container -->
+  </section>
+
+
+  <!-- ============================================================
+       RELATED ATTRACTIONS
+  ============================================================ -->
+  <section class="section section--gray">
+    <div class="container">
+      <h2 style="margin-bottom:24px;">Also in Paris</h2>
+      <div class="attraction-strip">
+        <a href="#" class="attraction-strip__btn">Louvre Museum</a>
+        <a href="#" class="attraction-strip__btn">Seine River Cruises</a>
+        <a href="#" class="attraction-strip__btn">Versailles Day Trips</a>
+      </div>
+    </div><!-- /.container -->
+  </section>
+
+
+  <!-- ============================================================
+       REVIEWS
+  ============================================================ -->
+  <section class="section">
+    <div class="container">
+
+      <div class="aggregate-rating" style="margin-bottom:40px;">
+        <div class="aggregate-rating__score">4.9</div>
+        <div class="aggregate-rating__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="aggregate-rating__count">437 reviews</div>
+      </div>
+
+      <div class="reviews-carousel">
+
+        <article class="review-card">
+          <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="review-card__text">
+            "Skipping the 2-hour queue was worth the price alone. Our guide's stories about the tower's history made it even better."
+          </blockquote>
+          <footer class="review-card__author">
+            <strong>Maria G.</strong>
+            <span class="review-card__tour">Eiffel Tower Tour</span>
+          </footer>
+        </article>
+
+        <article class="review-card">
+          <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="review-card__text">
+            "The sunset champagne tour was absolutely magical. Best anniversary gift ever."
+          </blockquote>
+          <footer class="review-card__author">
+            <strong>James &amp; Lisa P.</strong>
+            <span class="review-card__tour">Eiffel Tower Sunset Tour</span>
+          </footer>
+        </article>
+
+        <article class="review-card">
+          <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="review-card__text">
+            "Our guide pointed out details we would have completely missed on our own. The summit views were breathtaking."
+          </blockquote>
+          <footer class="review-card__author">
+            <strong>The Patel Family</strong>
+            <span class="review-card__tour">Eiffel Tower Tour</span>
+          </footer>
+        </article>
+
+      </div><!-- /.reviews-carousel -->
+    </div><!-- /.container -->
+  </section>
+
+
+  <!-- ============================================================
+       FAQ ACCORDION
+  ============================================================ -->
+  <section class="section section--gray">
+    <div class="container">
+
+      <h2 style="margin-bottom:32px;">Eiffel Tower Tours — Frequently Asked Questions</h2>
+
+      <ul class="faq-list" style="max-width:760px;">
+
+        <li class="faq-item">
+          <button class="faq-item__question" type="button">
+            Do I need to queue at the Eiffel Tower on a private tour?
+            <span class="faq-item__icon"></span>
+          </button>
+          <div class="faq-item__answer">
+            <p>No. All our Eiffel Tower private tours include skip-the-line access, so you'll bypass the public queues entirely.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-item__question" type="button">
+            Is the summit access included?
+            <span class="faq-item__icon"></span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Summit access is included in our standard Eiffel Tower tour and the sunset champagne tour. The combo tour includes second-floor access.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-item__question" type="button">
+            Can I book an Eiffel Tower tour last minute?
+            <span class="faq-item__icon"></span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Subject to availability, we accept bookings up to 24 hours in advance. However, we recommend booking at least 3 days ahead during peak season (June–September).</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-item__question" type="button">
+            Is the tour suitable for children?
+            <span class="faq-item__icon"></span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Absolutely. Our guides are experienced with families and adjust the tour's pace and commentary for younger visitors.</p>
+          </div>
+        </li>
+
+      </ul><!-- /.faq-list -->
+    </div><!-- /.container -->
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <!-- Brand col (2fr) -->
+        <div class="footer__col footer__brand">
+          <div class="footer__logo">MyPrivate<span>Tours</span></div>
+          <p>Handcrafted private tours in Europe's greatest cities. Expert local guides. No crowds. Just you.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="TripAdvisor">TA</a>
+          </div>
+        </div>
+
+        <!-- Destinations col (1fr) -->
+        <div class="footer__col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="paris.html">Paris</a></li>
+            <li><a href="rome.html">Rome</a></li>
+            <li><a href="london.html">London</a></li>
+            <li><a href="barcelona.html">Barcelona</a></li>
+            <li><a href="florence.html">Florence</a></li>
+            <li><a href="prague.html">Prague</a></li>
+            <li><a href="venice.html">Venice</a></li>
+            <li><a href="new-york.html">New York</a></li>
+          </ul>
+        </div>
+
+        <!-- Paris Tours col (1fr) -->
+        <div class="footer__col">
+          <h4>Paris Tours</h4>
+          <ul>
+            <li><a href="paris-eiffel-tower-tours.html">Eiffel Tower Tours</a></li>
+            <li><a href="#">Louvre Museum Tours</a></li>
+            <li><a href="#">Seine River Cruises</a></li>
+            <li><a href="#">Versailles Day Trips</a></li>
+            <li><a href="#">Montmartre Walks</a></li>
+          </ul>
+        </div>
+
+        <!-- Company col (1fr) -->
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="b2b.html">B2B &amp; Groups</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter col (1.5fr) -->
+        <div class="footer__col">
+          <h4>Stay Inspired</h4>
+          <p style="font-size:.9rem;color:rgba(255,255,255,.6);margin-bottom:16px;">Get travel tips and exclusive tour offers delivered to your inbox.</p>
+          <div class="footer__newsletter">
+            <input type="email" placeholder="Your email address" aria-label="Email address" />
+            <button class="btn btn--sm btn--white">Subscribe</button>
+          </div>
+        </div>
+
+      </div><!-- /.footer__grid -->
+
+      <div class="footer__bottom">
+        <p>&copy; 2025 MyPrivateTours.com. All rights reserved.</p>
+        <p>Wireframe prototype — black &amp; white design reference only.</p>
+      </div>
+
+    </div><!-- /.container -->
+  </footer><!-- /.footer -->
+
+
+  <!-- ============================================================
+       WHATSAPP WIDGET
+  ============================================================ -->
+  <div class="whatsapp-widget" role="button" aria-label="Chat on WhatsApp" title="Chat with us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.523 5.847L.057 23.882l6.195-1.447A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm6.001 16.92c-.253.712-1.474 1.36-2.027 1.43-.516.065-1.17.093-1.887-.118-.435-.131-.994-.306-1.708-.6-3.003-1.293-4.963-4.325-5.113-4.524-.15-.198-1.217-1.62-1.217-3.09 0-1.47.77-2.193 1.044-2.493.272-.298.597-.373.796-.373.199 0 .398.002.572.01.184.008.43-.07.673.514.254.605.862 2.092.937 2.244.076.151.127.328.025.527-.1.2-.15.323-.298.497-.15.174-.315.39-.45.523-.15.148-.305.308-.13.604.174.296.773 1.275 1.659 2.063 1.14 1.018 2.102 1.332 2.4 1.483.298.15.472.126.647-.076.174-.2.746-.873 .945-1.173.198-.298.397-.248.671-.15.274.1 1.74.82 2.039.97.298.15.497.224.572.349.074.124.074.72-.18 1.432z"/>
+    </svg>
+    <span class="whatsapp-widget__tooltip">Chat with us on WhatsApp</span>
+  </div><!-- /.whatsapp-widget -->
+
+
+  <!-- ============================================================
+       COOKIE BANNER
+  ============================================================ -->
+  <div class="cookie-banner" role="region" aria-label="Cookie consent">
+    <div class="cookie-banner__inner">
+      <p class="cookie-banner__text">
+        We use cookies to improve your browsing experience and analyse site traffic.
+        <a href="#">Learn more</a>
+      </p>
+      <div class="cookie-banner__actions">
+        <button class="btn btn--sm btn--outline" data-cookie-action="decline">Decline</button>
+        <button class="btn btn--sm" data-cookie-action="accept">Accept All</button>
+      </div>
+    </div>
+  </div><!-- /.cookie-banner -->
+
+
+  <script src="scripts.js"></script>
+</body>
+</html>

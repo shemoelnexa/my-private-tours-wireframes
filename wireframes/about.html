@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — MyPrivateTours</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION -- Two-row header ===== -->
+  <nav class="nav">
+    <div class="nav__top">
+      <div class="container nav__top-inner">
+        <a href="index.html" class="nav__logo">MyPrivate<span>Tours</span></a>
+        <ul class="nav__categories">
+          <li><a href="index.html" class="nav__cat-trigger">Home</a></li>
+          <li class="nav__has-mega">
+            <button class="nav__cat-trigger" aria-expanded="false" aria-haspopup="true">City Tours <span class="nav__caret">&#9662;</span></button>
+            <div class="mega-menu" role="region" aria-label="City Tours">
+              <div class="mega-menu__layout">
+                <aside class="mega-menu__sidebar"><ul class="mega-menu__regions"><li><a href="paris.html" class="active">Paris</a></li><li><a href="#">Rome</a></li><li><a href="#">London</a></li><li><a href="#">Barcelona</a></li><li><a href="#">Florence</a></li><li><a href="#">Prague</a></li><li><a href="#">Venice</a></li><li><a href="#">New York</a></li></ul></aside>
+                <div class="mega-menu__main">
+                  <h4 class="mega-menu__heading"><span class="mega-menu__dot"></span> Top attractions</h4>
+                  <div class="mega-menu__attractions">
+                    <a href="paris-eiffel-tower-tours.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Eiffel Tower</div><div class="mega-attr__text"><strong>Eiffel Tower Tours</strong><span>Attraction in Paris, France</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Colosseum</div><div class="mega-attr__text"><strong>Colosseum Tours</strong><span>Attraction in Rome, Italy</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Sagrada Familia</div><div class="mega-attr__text"><strong>Sagrada Familia Tours</strong><span>Attraction in Barcelona, Spain</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Vatican</div><div class="mega-attr__text"><strong>Vatican Museums Tours</strong><span>Attraction in Rome, Italy</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Disneyland</div><div class="mega-attr__text"><strong>Disneyland Paris Tours</strong><span>Attraction in Paris, France</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Auschwitz</div><div class="mega-attr__text"><strong>Memorial &amp; Museum Tours</strong><span>Attraction in Oswiecim, Poland</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Warner Bros</div><div class="mega-attr__text"><strong>Warner Bros. Studio Tours</strong><span>Attraction in London, UK</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Louvre</div><div class="mega-attr__text"><strong>Louvre Museum Tours</strong><span>Attraction in Paris, France</span></div></a>
+                    <a href="#" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Seine</div><div class="mega-attr__text"><strong>Seine River Tours</strong><span>Attraction in Paris, France</span></div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Blog with Mega Menu -->
+          <li class="nav__has-mega">
+            <button class="nav__cat-trigger" aria-expanded="false" aria-haspopup="true">
+              Blog <span class="nav__caret">&#9662;</span>
+            </button>
+            <div class="mega-menu" role="region" aria-label="Blog">
+              <div class="mega-menu__layout">
+                <aside class="mega-menu__sidebar">
+                  <ul class="mega-menu__regions">
+                    <li><a href="blog.html" class="active">All Articles</a></li>
+                    <li><a href="#">Travel Tips</a></li>
+                    <li><a href="#">Destination Guides</a></li>
+                    <li><a href="#">Food &amp; Culture</a></li>
+                    <li><a href="#">Family Travel</a></li>
+                    <li><a href="#">Hidden Gems</a></li>
+                  </ul>
+                </aside>
+                <div class="mega-menu__main">
+                  <h4 class="mega-menu__heading"><span class="mega-menu__dot"></span> Latest articles</h4>
+                  <div class="mega-menu__attractions">
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Paris</div><div class="mega-attr__text"><strong>10 Hidden Gems in Paris Only Locals Know</strong><span>Travel Tips &middot; 6 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Rome</div><div class="mega-attr__text"><strong>Ultimate Guide to the Colosseum in 2026</strong><span>Destination Guide &middot; 8 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">London</div><div class="mega-attr__text"><strong>London with Kids: A Family Travel Guide</strong><span>Family Travel &middot; 5 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Barcelona</div><div class="mega-attr__text"><strong>Barcelona Beyond Gaudi: Local Favourites</strong><span>Hidden Gems &middot; 7 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Food</div><div class="mega-attr__text"><strong>Best Food Tours in Europe: A Tasting Guide</strong><span>Food &amp; Culture &middot; 6 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Venice</div><div class="mega-attr__text"><strong>Venice Off the Beaten Path</strong><span>Hidden Gems &middot; 5 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Prague</div><div class="mega-attr__text"><strong>Prague in Winter: A Magical Experience</strong><span>Destination Guide &middot; 6 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Florence</div><div class="mega-attr__text"><strong>Florence Art &amp; Wine: The Perfect Combo</strong><span>Food &amp; Culture &middot; 7 min read</span></div></a>
+                    <a href="blog-article.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">New York</div><div class="mega-attr__text"><strong>First-Timer's Guide to New York City</strong><span>Travel Tips &middot; 9 min read</span></div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="about.html" class="nav__cat-trigger">About</a></li>
+
+          <!-- B2B with Mega Menu -->
+          <li class="nav__has-mega">
+            <button class="nav__cat-trigger" aria-expanded="false" aria-haspopup="true">
+              B2B <span class="nav__caret">&#9662;</span>
+            </button>
+            <div class="mega-menu" role="region" aria-label="B2B">
+              <div class="mega-menu__layout">
+                <aside class="mega-menu__sidebar">
+                  <ul class="mega-menu__regions">
+                    <li><a href="b2b.html" class="active">Overview</a></li>
+                    <li><a href="#">Travel Agencies</a></li>
+                    <li><a href="#">Hotels &amp; Concierge</a></li>
+                    <li><a href="#">Corporate Groups</a></li>
+                    <li><a href="#">DMCs &amp; Operators</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                  </ul>
+                </aside>
+                <div class="mega-menu__main">
+                  <h4 class="mega-menu__heading"><span class="mega-menu__dot"></span> Partner solutions</h4>
+                  <div class="mega-menu__attractions">
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">White Label</div><div class="mega-attr__text"><strong>White-Label Solutions</strong><span>Branded booking for your clients</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">API</div><div class="mega-attr__text"><strong>API Integration</strong><span>Connect your platform to our tours</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Commission</div><div class="mega-attr__text"><strong>Commission Program</strong><span>Earn on every referral booking</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Group</div><div class="mega-attr__text"><strong>Group Bookings</strong><span>Custom itineraries for 10+ guests</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Concierge</div><div class="mega-attr__text"><strong>Concierge Desk Program</strong><span>Exclusive rates for hotel partners</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Corporate</div><div class="mega-attr__text"><strong>Corporate Experiences</strong><span>Team building &amp; incentive trips</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">MICE</div><div class="mega-attr__text"><strong>MICE &amp; Events</strong><span>Meetings, incentives &amp; conferences</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">DMC</div><div class="mega-attr__text"><strong>DMC Partnerships</strong><span>Destination management collaboration</span></div></a>
+                    <a href="b2b.html" class="mega-attr"><div class="mega-attr__img img-placeholder img-placeholder--1x1">Affiliate</div><div class="mega-attr__text"><strong>Affiliate Program</strong><span>Earn commissions from your audience</span></div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="contact.html" class="nav__cat-trigger">Contact</a></li>
+        </ul>
+        <div class="nav__utility">
+          <a href="#" class="nav__utility-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Wishlist</a>
+          <a href="#" class="nav__utility-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> EN/USD</a>
+          <a href="#" class="nav__utility-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Profile</a>
+        </div>
+        <div class="nav__hamburger" aria-label="Menu"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+</nav>
+  <div class="mobile-nav">
+    <a href="index.html" class="mobile-nav__link">Home</a>
+    <div class="mobile-nav__city-toggle">Places to see</div>
+    <div class="mobile-nav__accordion">
+      <a href="paris.html">Paris</a><a href="#">Rome</a><a href="#">London</a><a href="#">Barcelona</a><a href="#">Florence</a><a href="#">Prague</a><a href="#">Venice</a><a href="#">New York</a>
+    </div>
+    <div class="mobile-nav__city-toggle">Things to do</div>
+    <div class="mobile-nav__accordion">
+      <a href="#">Walking Tours</a><a href="#">Food Tours</a><a href="#">Museum Tours</a><a href="#">Day Trips</a>
+    </div>
+    <a href="blog.html" class="mobile-nav__link">Trip inspiration</a>
+    <a href="about.html" class="mobile-nav__link">About</a>
+    <a href="b2b.html" class="mobile-nav__link">B2B</a>
+    <a href="contact.html" class="mobile-nav__link">Contact</a>
+  </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1>About MyPrivateTours</h1>
+      <p>Premium private tours crafted by experts who love what they do</p>
+    </div>
+  </section>
+
+  <!-- ===== BRAND STORY ===== -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width:720px">
+        <h2>Our Story</h2>
+        <p>MyPrivateTours was founded with a simple belief: the best way to experience a city is through the eyes of someone who truly knows it. What began as a single guide sharing their passion for Paris has grown into a network of expert local guides across eight of the world's most captivating cities.</p>
+        <p>We don't do mass-market. Every tour is private — just you, your group, and a guide who lives and breathes their city. From skip-the-line access at the Eiffel Tower to hidden gems in Venice's back canals, we curate experiences that go far beyond what a guidebook can offer.</p>
+        <p>Our guides aren't just knowledgeable — they're storytellers, historians, and food lovers who turn a city visit into a lifelong memory.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-header">
+        <h2>Meet Our Team</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="img-placeholder" style="width:120px;height:120px;border-radius:50%;margin:0 auto 14px">Photo</div>
+          <h3>Sam</h3>
+          <p>Founder &amp; CEO</p>
+        </div>
+        <div class="team-card">
+          <div class="img-placeholder" style="width:120px;height:120px;border-radius:50%;margin:0 auto 14px">Photo</div>
+          <h3>Marie</h3>
+          <p>Head of Paris Operations</p>
+        </div>
+        <div class="team-card">
+          <div class="img-placeholder" style="width:120px;height:120px;border-radius:50%;margin:0 auto 14px">Photo</div>
+          <h3>Marco</h3>
+          <p>Head of Rome &amp; Florence Operations</p>
+        </div>
+        <div class="team-card">
+          <div class="img-placeholder" style="width:120px;height:120px;border-radius:50%;margin:0 auto 14px">Photo</div>
+          <h3>Elena</h3>
+          <p>Head of Customer Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="stat-number">8</span>
+          <span class="stat-label">Cities</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">50,000+</span>
+          <span class="stat-label">Travellers</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">40+</span>
+          <span class="stat-label">Expert Guides</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">4.9 &#9733;</span>
+          <span class="stat-label">Average Rating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section section--gray" style="text-align:center">
+    <div class="container">
+      <h2>Ready to explore?</h2>
+      <p style="color:#666;max-width:480px;margin:0 auto 24px">Browse our curated collection of private tours across 8 iconic cities.</p>
+      <a href="index.html" class="btn">Explore Tours</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__brand">
+          <a href="index.html" class="nav__logo" style="color:#fff">MyPrivate<span>Tours</span></a>
+          <p>Premium private tours across Europe's most iconic cities and New York. Expert local guides, curated experiences, and unforgettable moments.</p>
+          <div class="footer__newsletter"><input type="email" placeholder="Your email"><button class="btn btn--sm btn--white">Subscribe</button></div>
+        </div>
+        <div class="footer__col"><h4>Cities</h4><ul><li><a href="paris.html">Paris</a></li><li><a href="#">Rome</a></li><li><a href="#">London</a></li><li><a href="#">Barcelona</a></li><li><a href="#">Florence</a></li><li><a href="#">Prague</a></li><li><a href="#">Venice</a></li><li><a href="#">New York</a></li></ul></div>
+        <div class="footer__col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="b2b.html">B2B Portal</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+        <div class="footer__col"><h4>Legal</h4><ul><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 MyPrivateTours.com. All rights reserved.</span>
+        <div class="footer__social"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TripAdvisor</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="whatsapp-widget"><span class="whatsapp-widget__icon">WA</span><span class="whatsapp-widget__tooltip">Chat with us on WhatsApp</span></div>
+
+  <div class="cookie-banner">
+    <div class="container cookie-banner__inner">
+      <p>We use cookies to improve your experience.</p>
+      <div class="cookie-banner__actions">
+        <button class="btn btn--sm" data-cookie-action="accept">Accept All</button>
+        <button class="btn btn--sm btn--outline" data-cookie-action="manage">Manage</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
