@@ -300,9 +300,12 @@ All three concepts must:
 
 ---
 
-## 15. Open questions (resolve before implementation plan)
+## 15. Resolved defaults
 
-1. **Serif choice** — spec assumes EB Garamond for Concepts A and C. Alternative is Fraunces (more modern, variable). Confirm preference before kickoff.
-2. **Mailchimp endpoint** — any existing list / form-action URL the capture should post to, or leave as `#` placeholder?
-3. **WhatsApp floating widget** — sitemap says this appears globally on every page. In scope for the homepage designs? If yes, each concept gets a concept-appropriate styling.
-4. **Live Bokun feed on featured tours** — stub with 6–8 invented tours styled per concept, or leave that section as an empty state with note "Bokun-populated at build"?
+1. **Serif:** EB Garamond for Concepts A and C (softer weight curve than Fraunces, better mixed-size rendering). Can be swapped later if client prefers.
+2. **Mailchimp endpoint:** Placeholder `#` on form `action`, with Mailchimp-compatible markup hooks (`honeypot` field, hidden fields for audience ID) the dev team can wire up post-handoff.
+3. **WhatsApp floating widget:** In scope for all three concepts. Each concept styles the widget to match its own language:
+   - Concept A — cream circle with ink WhatsApp glyph, hairline ring
+   - Concept B — bold orange pill with white glyph and spring-hover
+   - Concept C — frosted-glass circle with orange glow, sand glyph
+4. **Featured tours:** Stubbed with 6–8 invented tours per concept (name, city, price from, duration, rating) drawn from a shared `/homepage/assets/data/tours.json` the dev team can replace with Bokun feed. Same data across concepts, different card styling.
